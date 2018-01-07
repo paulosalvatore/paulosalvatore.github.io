@@ -33,7 +33,7 @@ p {
 
 #portfolio .titulo {
 	margin-bottom: 0;
-	color: #E74C3C;
+	color: #31B454;
 }
 
 #portfolio .data,
@@ -41,9 +41,16 @@ p {
 	margin-bottom: 20px;
 }
 
+#portfolio .fa {
+	float: left;
+	margin-top: 2px;
+	margin-right: 3px;
+}
+
+#portfolio .conteudo img,
 #portfolio .conteudo a {
 	display: block;
-	text-align: center;
+	margin: 0 auto;
 }
 
 #portfolio .links {
