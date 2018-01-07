@@ -1,4 +1,121 @@
+var tecnologias = {
+	"c#": {
+		"titulo": "C#",
+		"cor": "#662E93"
+	},
+	"c++": {
+		"titulo": "C++",
+		"cor": "#662E93"
+	},
+	"php": {
+		"titulo": "PHP",
+		"cor": "#662E93"
+	},
+	"cakephp": {
+		"titulo": "CakePHP",
+		"cor": "#662E93"
+	},
+	"arduino": {
+		"titulo": "Arduino",
+		"cor": "#662E93"
+	},
+	"android": {
+		"titulo": "Android",
+		"cor": "#662E93"
+	},
+	"ios": {
+		"titulo": "iOS",
+		"cor": "#662E93"
+	},
+	"mindwave": {
+		"titulo": "MindWave",
+		"cor": "#662E93"
+	},
+	"vr": {
+		"titulo": "Realidade Virtual",
+		"cor": "#662E93"
+	}
+};
+
+var softwares = {
+	"unity": {
+		"titulo": "Unity",
+		"cor": "#662E93"
+	},
+	"visual_studio": {
+		"titulo": "Visual Studio",
+		"cor": "#662E93"
+	},
+	"phpstorm": {
+		"titulo": "PHP Storm",
+		"cor": "#662E93"
+	},
+	"android_studio": {
+		"titulo": "Android Studio",
+		"cor": "#662E93"
+	},
+	"xcode": {
+		"titulo": "XCode",
+		"cor": "#662E93"
+	},
+	"photoshop": {
+		"titulo": "Photoshop",
+		"cor": "#662E93"
+	},
+	"maya": {
+		"titulo": "Autodesk Maya",
+		"cor": "#662E93"
+	}
+};
+
 var portfolio = [
+	{
+		"id": "drivr",
+		"logo": "drivr.gif",
+		"titulo": "DrivR",
+		"data": "Agosto de 2017 - Outubro de 2017",
+		"links": [],
+		"tecnologias": [
+			"c#",
+			"unity",
+			"arduino",
+			"c++",
+			"android",
+			"ios",
+			"vr"
+		],
+		"softwares": [
+			"unity",
+			"maya",
+			"android_studio"
+		],
+		"participantes": [
+			{
+				"nome": "Paulo Salvatore",
+				"funcao": "Líder e Programador"
+			},
+			{
+				"nome": "Tainá Salvatore",
+				"funcao": "Designer"
+			},
+			{
+				"nome": "Tiago Akira",
+				"funcao": "Modelador e Texturizador 3D"
+			}
+		],
+		"premios": [
+			{
+				"data": "Novembro de 2017",
+				"descricao": "Top 3 - Startup One FIAP (200 empresas)",
+				"premiacao": "Entrada direta no programa de aceleração do FIESP."
+			},
+			{
+				"data": "Novembro de 2017",
+				"descricao": "Top 3 - Game Dev Cup - Everis Challenge",
+				"premiacao": "Entrada no programa de incubação da Everis, edição 2018."
+			}
+		]
+	},
 	{
 		"id": "mindrace",
 		"titulo": "MindRace",
@@ -20,13 +137,6 @@ var portfolio = [
 				"imagem": "github.png"
 			}
 		]
-	},
-	{
-		"id": "drivr",
-		"logo": "drivr.gif",
-		"titulo": "DrivR",
-		"data": "Agosto de 2017 - Outubro de 2017",
-		"links": []
 	},
 	{
 		"id": "trash_treasures",
@@ -77,6 +187,21 @@ var portfolio = [
 			{
 				"link": "https://github.com/paulosalvatore/AlienSurvival",
 				"imagem": "github.png"
+			}
+		]
+	},
+	{
+		"id": "scare_them_off",
+		"titulo": "Scare Them Off!",
+		"data": "Agosto de 2016 - Novembro de 2016",
+		"links": [
+			{
+				"link": "https://github.com/paulosalvatore/ScareThemOff",
+				"imagem": "github.png"
+			},
+			{
+				"link": "https://salvatoregames.itch.io/scarethemoff",
+				"imagem": "itchio.png"
 			}
 		]
 	}
@@ -154,7 +279,7 @@ $(function(){
 
 			$("html, body").animate({
 				scrollTop: portfolio_detail_box.offset().top
-			}, 400);
+			}, 600);
 		});
 	});
 
