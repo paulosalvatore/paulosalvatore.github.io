@@ -1,0 +1,3 @@
+DrivR é uma solução que busca reinventar a maneira que o ramo automobilístico se comunica com seu cliente. Na ferramenta é possível personalizar, interagir, construir uma pista e pilotar o seu veículo personalizado, utilizando o melhor que temos de realidade virtual no momento, o novo Oculus RIft, e também com um cockpit 4D, utilizado na etapa de interação com o interior do veículo e também na etapa de pilotar.
+
+A experiência foi desenvolvida por mim, líder e programador, pela Tainá Salvatore, designer e planejamento e também pelo Tiago Akira, modelador e texturizador 3D.
