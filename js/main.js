@@ -12,27 +12,24 @@ $(document).ready( function() {
 			$logo.show();
 		}
 	}
-	
-	// Show logo 
+
+	// Show logo
 	$('#tab-container .tab a, .main-links.sidebar a').click(function() {
 		if ($(this).closest('li').attr('id') != 'tab-about')
 			$logo.slideDown('slow');
 	});
-	
+
 	// Hide logo
 	$('#tab-about').click(function() {
 		$logo.slideUp('slow');
-	});	
-		
+	});
+
 	function animMeter(){
-		$(".meter > span").each(function() {
-		$(this)
-			.data("origWidth", $(this).width())
+		$(".meter > span")
 			.width(0)
 			.animate({
-				width: $(this).data("origWidth")
+				width: "100%"
 			}, 1200);
-		});
 	}
 
 	animMeter();
