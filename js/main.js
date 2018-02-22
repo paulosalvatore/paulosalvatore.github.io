@@ -1,14 +1,14 @@
 $(document).ready( function() {
 	$(document).tooltip({
-		'selector': '*[data-toggle="tooltip"]',
-		//'container': 'body',
-		'animation': true,
-		'placement': 'rigth'
+		"selector": '*[data-toggle="tooltip"]',
+		//"container": "body",
+		"animation": true,
+		"placement": "rigth"
 	});
 	// Logo
-	var $logo 	= $('#logo');
+	var $logo 	= $("#logo");
 	 if (location.href.indexOf("#") != -1) {
-		if(location.href.substr(location.href.indexOf("#"))!='#about'){
+		if(location.href.substr(location.href.indexOf("#")) != "#about"){
 			$logo.show();
 		}
 	}
@@ -25,28 +25,30 @@ $(document).ready( function() {
 	});
 
 	function animMeter(){
-		$(".meter > span")
-			.width(0)
-			.animate({
-				width: "100%"
-			}, 1200);
+		$(".meter > span").each(function(index, value){
+			$(this)
+				.width(0)
+				.animate({
+					width: $(this).data("size") + "%"
+				}, 1200);
+		})
 	}
 
 	animMeter();
 
-	$('#tab-container').easytabs({
+	$("#tab-container").easytabs({
 		animate			: true,
 		updateHash		: true,
-		transitionIn	: 'slideDown',
-		transitionOut	: 'slideUp',
+		transitionIn	: "slideDown",
+		transitionOut	: "slideUp",
 		animationSpeed	: 600,
-		tabActiveClass	: 'active'
-	}).bind('easytabs:midTransition', function(event, $clicked, $targetPanel){
-		if ($targetPanel.selector == '#resume')
+		tabActiveClass	: "active"
+	}).bind("easytabs:midTransition", function(event, $clicked, $targetPanel){
+		if ($targetPanel.selector == "#resume")
 			animMeter();
 	});
 
 	$(".main-links.sidebar a").click(function(){
-		$('#tab-container').easytabs('select', $(this).attr('href'));
+		$("#tab-container").easytabs("select", $(this).attr("href"));
 	});
 });
