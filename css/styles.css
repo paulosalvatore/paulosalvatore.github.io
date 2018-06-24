@@ -4,7 +4,11 @@ p {
 
 .sny-icon-content a {
 	display: block;
-	text-align: center;
+}
+
+.sny-icon-content a,
+.sny-icon-content p {
+	text-align: center !important;
 }
 
 .info h4, #header h4 {
